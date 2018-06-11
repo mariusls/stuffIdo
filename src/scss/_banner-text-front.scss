@@ -1,0 +1,89 @@
+///////// Image fullwidth + text infront ////////
+
+.banner-text-front-wrap {
+	position: relative;
+}
+.image-responsive img {
+    display: block;
+	height: auto;
+	width: 100%;
+}
+
+.bck-image img {
+    height: 450px !important;
+}
+
+.border-grey {
+    border: 1px solid #d3d3d3;
+}
+
+
+.front-textarea {
+	display: block;
+	background-color: $white;
+    padding: 0 10px 30px 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	
+	@media (min-width: 768px) {
+		width: 75%;
+    }
+    
+    @media (min-width: 992px) {
+        width: 55%;
+    }
+    
+    @media (min-width: 1800px) {
+        width: 40%;
+    }
+	
+	.info-text {
+		margin-top: 30px;
+		font-size: 16px;
+		text-align: center;
+		
+		span {
+			display: block;
+			padding: 3px 0;
+		}
+		
+		@media (min-width: 992px) {
+			span {
+				display: inline-block;
+			}
+				span:not(:last-child):after {
+				padding-left: 20px;
+				padding-right: 20px;
+				content: "|";
+			}
+		}
+	}
+	
+	.main-content-text {
+		margin-top: 30px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+	
+	
+}
+
+.btn-banner {
+	margin-top: 45px;
+	//display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+///////// Image fullwidth + text infront END /////////

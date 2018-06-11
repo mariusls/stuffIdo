@@ -1,0 +1,24 @@
+.full-image {
+    background-image: url("https://i.pinimg.com/originals/10/40/c7/1040c7073515426589e0ad4890ed1331.jpg");
+}
+
+.banner-text-light {
+
+    overflow: hidden;
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 992px) {
+        width: 60%;
+    }
+
+    .center-text {
+        padding: 35px 0 45px 0;
+    }
+
+    h2, h3, p, div, span {
+        color: $white;
+    }
+}

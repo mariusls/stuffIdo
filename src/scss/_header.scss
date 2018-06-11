@@ -1,0 +1,114 @@
+///////// HEADER /////////
+
+//ITUMX RED #EF532F
+
+#mainNavigation {
+    position: relative;
+    min-height: 75px;
+}
+
+.main-logo img {
+    width: 120px;
+    display: block;
+    height: auto;
+}
+
+.nav-header {
+    margin-right: 15px;
+    margin-right: 15px;
+
+    @media (min-width: 992px) {
+        margin-right: 0;
+        margin-left: 0;
+        float: left;
+    }
+
+    .main-logo {
+        position: absolute;
+    }
+
+    .nav-hamburger-holder {
+        position: relative;
+        float: right;
+        top: 25px;
+        
+        .hamburger {
+            &:focus {
+                outline: none;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.navbar.navbar-default {
+    background: none;
+    border: none;
+}
+
+.nav-right {
+    @media (min-width: 992px) {
+        float: right;
+    }   
+}
+
+.navbar {
+
+    #navigation-list {
+        margin-top: 75px;
+        z-index: 999;
+        background-color: $white;
+        ul {
+            width: 100%;
+            li {
+                text-transform: uppercase;
+                font-size: 15px;
+                padding: 2px 0;
+                
+                a {
+                    transition: ease all 0.2s;
+
+                    color: #333333;
+                    padding: 3px 10px;
+                    border-bottom: 1px solid transparent;
+
+                    &:hover {
+                        background: none ;
+                        border-bottom: 1px solid $itumx-brand;
+                    }
+                    &:focus {
+                        background: none;
+                    }
+
+                    &:active, &.active {
+                        color: $itumx-brand;
+                        border-bottom: 1px solid $itumx-brand;
+                    }
+                }
+            }  
+        }
+    }
+
+    @media (min-width: 992px) {
+        #navigation-list {
+            display: block;
+            margin-top: 0;
+            padding-top: 25px;
+            color: #333333;
+            float: right;
+
+            ul {
+                :last-child a {
+                    padding-right: 0;
+                }
+            
+                li {
+                    float: left;
+                }
+            }
+        }
+    }
+}
