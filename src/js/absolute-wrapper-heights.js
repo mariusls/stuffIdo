@@ -1,6 +1,7 @@
 $(document).ready(function() {
+    if ($(window).width() > 767) {
+        var finalMargin = ($('.front-textarea').height() / 2 ) + 100;
 
-    var finalMargin = ($('.front-textarea').height() / 2 ) + 100;
-
-    $('.banner-text-front-wrap').css("margin-bottom", finalMargin);
+        $('.banner-text-front').css("margin-bottom", finalMargin);
+    }
 });

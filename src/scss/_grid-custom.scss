@@ -58,11 +58,15 @@
 }
 
 @media (min-width: 1200px) {
-    .col-md-double-pad-left {
+    .col-lg-extra-pad-left {
         padding-left: 60px;
     }
-    .col-md-double-pad-right {
+    .col-lg-extra-pad-right {
         padding-right: 60px;
+    }
+    .col-lg-extra-pad {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

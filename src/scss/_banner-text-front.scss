@@ -1,6 +1,6 @@
 ///////// Image fullwidth + text infront ////////
 
-.banner-text-front-wrap {
+.banner-text-front {
 	position: relative;
 }
 .image-responsive img {
@@ -10,7 +10,9 @@
 }
 
 .bck-image img {
-    height: 450px !important;
+	@media (min-width: 992px) {
+		height: 450px !important;
+	}
 }
 
 .border-grey {
@@ -22,27 +24,28 @@
 	display: block;
 	background-color: $white;
     padding: 0 10px 30px 10px;
-    position: absolute;
     top: 50%;
     width: 100%;
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
 	
 	@media (min-width: 768px) {
 		width: 75%;
+		position: absolute;
     }
     
     @media (min-width: 992px) {
-        width: 55%;
+		width: 55%;
     }
     
     @media (min-width: 1800px) {
         width: 40%;
     }
 	
-	.info-text {
+	&-infotext {
 		margin-top: 30px;
 		font-size: 16px;
 		text-align: center;
@@ -63,8 +66,14 @@
 			}
 		}
 	}
+
+	&-header {
+		@media (min-width: 992px) {
+			width: 75%;
+		}
+	}
 	
-	.main-content-text {
+	&-maincontent {
 		margin-top: 30px;
 		text-align: center;
 		margin-left: auto;

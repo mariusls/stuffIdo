@@ -1,0 +1,65 @@
+.triple-tile-grid {
+    padding: 45px 0;
+    margin: 15px 0;
+
+    &-item {
+        position: relative;
+        background: $white;
+        text-align: center;
+        border: 2px solid transparent;
+        margin: 15px 0;
+
+        @media (min-width: 768px) {
+            min-height: 470px;
+        }
+
+        @include prefix(transition, ease all 0.35s, webkit);
+        //transition: ease all 0.35s;
+
+        &:hover {
+
+            .triple-tile-grid-item-textcontent {
+                color: $white;
+            }
+
+            .readmore {
+                color: $dark-blue;
+            }
+            border: 2px solid $itumx-brand;
+            background-color: $itumx-brand;
+            
+        }
+
+
+        &-image {
+            @media (min-width: 768px) {
+                //max-height: 100px;
+            }
+        }
+
+        &-textcontent {
+            padding-top: 10px;
+            margin: 0 auto 15px auto;
+            width: 75%;
+
+            h3 {
+                font-size: 22px;
+                line-height: 1.45;
+            }
+
+            &-maintext {
+                padding: 15px 0 30px 0;
+            }
+        }
+
+        .readmore {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            //display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+}

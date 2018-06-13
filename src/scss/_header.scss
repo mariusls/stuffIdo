@@ -4,7 +4,7 @@
 
 #mainNavigation {
     position: relative;
-    min-height: 75px;
+    min-height: 65px;
 }
 
 .main-logo img {
@@ -26,6 +26,8 @@
     .main-logo {
         position: absolute;
     }
+
+
 
     .nav-hamburger-holder {
         position: relative;
@@ -69,7 +71,7 @@
                 padding: 2px 0;
                 
                 a {
-                    transition: ease all 0.2s;
+                    @include prefix(transition, ease all 0.35s, webkit);
 
                     color: #333333;
                     padding: 3px 10px;
@@ -94,7 +96,7 @@
 
     @media (min-width: 992px) {
         #navigation-list {
-            display: block;
+            display: inline-block;
             margin-top: 0;
             padding-top: 25px;
             color: #333333;
