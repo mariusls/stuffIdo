@@ -1,0 +1,43 @@
+.article-tile {
+
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+
+    margin: 0 15px;
+
+    @media (min-width: 992px) {
+        margin: 0 30px;
+    }
+
+    @media (min-width: 1200px) {
+        margin: 0 45px;
+    }
+
+    header {
+        h3 {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-align: start;
+        }
+    }
+
+    &-content { 
+    }
+}
+
+
+.tile-anchor-wrapper {
+
+    article {
+        @include prefix(transition, ease all 0.2s, webkit);
+
+        padding: 10px 0;
+
+        &:hover {
+            border-bottom: 2px solid $itumx-brand;
+            border-top: 2px solid $itumx-brand;
+        } 
+    }  
+}

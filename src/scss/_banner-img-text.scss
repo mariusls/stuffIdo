@@ -6,13 +6,7 @@
 
 .imagetext-content {
     overflow: hidden;
-    padding-top: 30px;
-
-    h3 {
-        @media (min-width: 992px) {
-            width: 75%;
-        }
-    }
+    padding: 30px 0;
 
     &-imageleft {
 

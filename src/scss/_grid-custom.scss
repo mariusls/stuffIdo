@@ -1,6 +1,6 @@
 // Grid
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
     body:not(.expEditor) {
         .row-eq-height.container:before,
@@ -69,5 +69,3 @@
         padding-right: 30px;
     }
 }
-
-
