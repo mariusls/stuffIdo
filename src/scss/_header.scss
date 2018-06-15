@@ -5,6 +5,7 @@
 #mainNavigation {
     position: relative;
     min-height: 65px;
+    margin-bottom: 20px;
 }
 
 .main-logo img {
@@ -23,11 +24,19 @@
         float: left;
     }
 
+    .nav-brand {
+        float: left;
+        height: 50px;
+        padding: 15px 15px;
+
+        @media (min-width: 768px) {
+            margin-left: -15px;
+        }
+    }
+
     .main-logo {
         position: absolute;
     }
-
-
 
     .nav-hamburger-holder {
         position: relative;
@@ -46,20 +55,9 @@
     }
 }
 
-.navbar.navbar-default {
-    background: none;
-    border: none;
-}
-
 .nav-right {
-    @media (min-width: 992px) {
-        float: right;
-    }   
-}
 
-.navbar {
-
-    #navigation-list {
+        #navigation-list {
         margin-top: 75px;
         z-index: 999;
         background-color: $white;
@@ -67,7 +65,8 @@
             width: 100%;
             li {
                 text-transform: uppercase;
-                font-size: 15px;
+                font-size: 14px;
+                font-weight: bold;
                 padding: 2px 0;
                 
                 a {
@@ -95,12 +94,15 @@
     }
 
     @media (min-width: 992px) {
+
+        float: right;
+        
         #navigation-list {
             display: inline-block;
             margin-top: 0;
             padding-top: 25px;
             color: #333333;
-            float: right;
+            //float: right;
 
             ul {
                 :last-child a {
@@ -114,3 +116,4 @@
         }
     }
 }
+

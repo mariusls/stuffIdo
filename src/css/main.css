@@ -146,6 +146,16 @@ p, div {
   @media (min-width: 1600px) {
     .container-wide {
       width: 1570px; } }
+  .container-wide:before {
+    display: table;
+    content: ""; }
+  .container-wide:after {
+    clear: both; }
+
+@media (min-width: 992px) {
+  .container-less-pad {
+    padding-left: 5px;
+    padding-right: 5px; } }
 
 @media (min-width: 1200px) {
   .col-5 {
@@ -169,7 +179,8 @@ p, div {
 
 #mainNavigation {
   position: relative;
-  min-height: 65px; }
+  min-height: 65px;
+  margin-bottom: 20px; }
 
 .main-logo img {
   width: 120px;
@@ -184,6 +195,13 @@ p, div {
       margin-right: 0;
       margin-left: 0;
       float: left; } }
+  .nav-header .nav-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px; }
+    @media (min-width: 768px) {
+      .nav-header .nav-brand {
+        margin-left: -15px; } }
   .nav-header .main-logo {
     position: absolute; }
   .nav-header .nav-hamburger-holder {
@@ -196,50 +214,44 @@ p, div {
       .nav-header .nav-hamburger-holder {
         display: none; } }
 
-.navbar.navbar-default {
-  background: none;
-  border: none; }
-
-@media (min-width: 992px) {
-  .nav-right {
-    float: right; } }
-
-.navbar #navigation-list {
+.nav-right #navigation-list {
   margin-top: 75px;
   z-index: 999;
   background-color: #FFFFFF; }
-  .navbar #navigation-list ul {
+  .nav-right #navigation-list ul {
     width: 100%; }
-    .navbar #navigation-list ul li {
+    .nav-right #navigation-list ul li {
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 14px;
+      font-weight: bold;
       padding: 2px 0; }
-      .navbar #navigation-list ul li a {
+      .nav-right #navigation-list ul li a {
         -webkit-transition: ease all 0.35s;
         transition: ease all 0.35s;
         color: #333333;
         padding: 3px 10px;
         border-bottom: 1px solid transparent; }
-        .navbar #navigation-list ul li a:hover {
+        .nav-right #navigation-list ul li a:hover {
           background: none;
           border-bottom: 1px solid #EF532F; }
-        .navbar #navigation-list ul li a:focus {
+        .nav-right #navigation-list ul li a:focus {
           background: none; }
-        .navbar #navigation-list ul li a:active, .navbar #navigation-list ul li a.active {
+        .nav-right #navigation-list ul li a:active, .nav-right #navigation-list ul li a.active {
           color: #EF532F;
           border-bottom: 1px solid #EF532F; }
 
 @media (min-width: 992px) {
-  .navbar #navigation-list {
-    display: inline-block;
-    margin-top: 0;
-    padding-top: 25px;
-    color: #333333;
+  .nav-right {
     float: right; }
-    .navbar #navigation-list ul :last-child a {
-      padding-right: 0; }
-    .navbar #navigation-list ul li {
-      float: left; } }
+    .nav-right #navigation-list {
+      display: inline-block;
+      margin-top: 0;
+      padding-top: 25px;
+      color: #333333; }
+      .nav-right #navigation-list ul :last-child a {
+        padding-right: 0; }
+      .nav-right #navigation-list ul li {
+        float: left; } }
 
 /*!
  * Hamburger
