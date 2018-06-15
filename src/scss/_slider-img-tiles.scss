@@ -9,8 +9,8 @@
     &-item {
         @include prefix(transition, ease all 0.2s, webkit);
 
-        &-image {
-            margin-bottom: 15px;
+        &-image img {
+            height: 120px;
         }
 
         &-text {

@@ -89,6 +89,11 @@ p, div {
   .button-transparent.transparent-white:active, .button-transparent.transparent-white:focus {
     color: #FFFFFF; }
 
+.button-icon {
+  display: inline-block;
+  border: none;
+  background: none; }
+
 .page-content {
   margin: 30px 0; }
 
@@ -109,6 +114,10 @@ p, div {
 @media (min-width: 1200px) {
   .center-width {
     width: 75%; } }
+
+@media (max-width: 991px) {
+  .hidden-small {
+    display: none; } }
 
 .img-center-block img {
   display: block;
@@ -183,7 +192,7 @@ p, div {
   margin-bottom: 20px; }
 
 .main-logo img {
-  width: 120px;
+  width: 130px;
   display: block;
   height: auto; }
 
@@ -215,30 +224,68 @@ p, div {
         display: none; } }
 
 .nav-right #navigation-list {
+  position: sticky;
   margin-top: 75px;
   z-index: 999;
   background-color: #FFFFFF; }
   .nav-right #navigation-list ul {
-    width: 100%; }
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
     .nav-right #navigation-list ul li {
+      position: relative;
+      display: block;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: bold;
-      padding: 2px 0; }
+      padding: 4px 0; }
       .nav-right #navigation-list ul li a {
         -webkit-transition: ease all 0.35s;
         transition: ease all 0.35s;
+        display: block;
         color: #333333;
         padding: 3px 10px;
         border-bottom: 1px solid transparent; }
         .nav-right #navigation-list ul li a:hover {
           background: none;
-          border-bottom: 1px solid #EF532F; }
+          border-bottom: 1px solid #EF532F;
+          text-decoration: none; }
         .nav-right #navigation-list ul li a:focus {
-          background: none; }
+          background: none;
+          text-decoration: none; }
         .nav-right #navigation-list ul li a:active, .nav-right #navigation-list ul li a.active {
           color: #EF532F;
           border-bottom: 1px solid #EF532F; }
+
+.nav-right form {
+  display: inline-block;
+  width: 100%;
+  height: 50px; }
+  .nav-right form .form-control {
+    display: inline-block;
+    height: 40px;
+    background: #EF532F;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 0; }
+    .nav-right form .form-control:focus {
+      -webkit-box-shadow: inset 0 0 5px #000000;
+      -moz-box-shadow: inset 0 0 5px #000000;
+      box-shadow: inset 0 0 5px #000000;
+      border: none; }
+  .nav-right form .form-control::placeholder {
+    color: #000000; }
+  .nav-right form .button-nav-search {
+    top: -42px;
+    right: 8px;
+    position: relative;
+    float: right;
+    font-size: 18px;
+    padding-top: 8px; }
+    .nav-right form .button-nav-search:active, .nav-right form .button-nav-search:focus {
+      outline: none; }
+    .nav-right form .button-nav-search .glyphicon {
+      top: 3px; }
 
 @media (min-width: 992px) {
   .nav-right {
@@ -246,12 +293,51 @@ p, div {
     .nav-right #navigation-list {
       display: inline-block;
       margin-top: 0;
-      padding-top: 25px;
+      padding-top: 20px;
       color: #333333; }
-      .nav-right #navigation-list ul :last-child a {
-        padding-right: 0; }
-      .nav-right #navigation-list ul li {
-        float: left; } }
+      .nav-right #navigation-list ul {
+        display: inline-block;
+        padding-top: 5px;
+        /*:last-child a {
+                    padding-right: 0;
+                }*/ }
+        .nav-right #navigation-list ul li {
+          float: left; }
+    .nav-right form {
+      display: inline-block;
+      float: right;
+      position: relative;
+      width: auto; }
+      .nav-right form .search-form-container {
+        background-color: white;
+        position: absolute;
+        visibility: visible;
+        z-index: 9999;
+        right: 0;
+        top: 0;
+        margin-right: 25px;
+        padding-left: 50px;
+        width: 480px; } }
+      @media (min-width: 992px) and (min-width: 992px) {
+        .nav-right form .search-form-container.hdn {
+          display: none; } }
+
+@media (min-width: 992px) {
+        .nav-right form .search-form-container .search-input-group {
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          .nav-right form .search-form-container .search-input-group .nav-search-close-button {
+            font-size: 20px;
+            padding-right: 5px;
+            border-left: 1px solid #EF532F; }
+            .nav-right form .search-form-container .search-input-group .nav-search-close-button .glyphicon {
+              top: 3px; }
+          .nav-right form .search-form-container .search-input-group .form-control {
+            display: inline-block;
+            width: 88%; }
+      .nav-right form .button-nav-search {
+        top: 0;
+        right: 0; } }
 
 /*!
  * Hamburger
@@ -463,7 +549,7 @@ p, div {
     transition: ease all 0.35s; }
     @media (min-width: 768px) {
       .triple-tile-grid-item {
-        min-height: 470px; } }
+        min-height: 520px; } }
     .triple-tile-grid-item:hover {
       border: 2px solid #EF532F;
       background-color: #EF532F; }
@@ -544,8 +630,8 @@ p, div {
   .slider-tiles-item {
     -webkit-transition: ease all 0.2s;
     transition: ease all 0.2s; }
-    .slider-tiles-item-image {
-      margin-bottom: 15px; }
+    .slider-tiles-item-image img {
+      height: 120px; }
     .slider-tiles-item-text {
       font-size: 16px;
       text-align: center; }

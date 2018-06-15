@@ -70,6 +70,12 @@
     }
 }
 
+.button-icon {
+    display: inline-block;
+    border: none;
+    background: none;
+}
+
 // HTML semantic elements
 .page-content {
     margin: 30px 0;
@@ -97,6 +103,12 @@
     }
     @media (min-width: 1200px) {
         width: 75%;
+    }
+}
+
+.hidden-small {
+    @media (max-width: 991px) {
+        display: none;
     }
 }
 
