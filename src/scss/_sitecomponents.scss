@@ -17,10 +17,7 @@
 	
 	&:hover {
         background-color: #e76604;
-        //border-bottom: 1px solid transparent;
         color: $white;
-        
-		//transform: scale(1.02);
 	}
 	
 	&:active, &:focus {
@@ -62,7 +59,6 @@
         &:active, &:focus {
             color: $white;
         }
-
     }
 
     &:after {
@@ -76,13 +72,30 @@
     background: none;
 }
 
-// HTML semantic elements
 .page-content {
     margin: 30px 0;
 }
 
+// Various hover classes
+.hover {
+    &-scale {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
+    &-border-brand {
+        padding: 10px 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
 
+        &:hover {
+            border-top: 2px solid $itumx-brand;
+            border-bottom: 2px solid $itumx-brand;
+
+        }
+    }   
+}
 
 .glyphicon {
     padding-left: 5px;
@@ -95,6 +108,14 @@
 
 .center-text {
     text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .center-width {
@@ -116,4 +137,56 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-right-block img {
+    display: block;
+    float: right;
+}
+
+.img-left-block img {
+    display: block;
+    float: left;
+}
+
+.img-profile img {
+    display: block;
+    height: 130px;
+}
+
+.contact-wrap {
+    padding: 30px 0 15px 0;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px) {
+            margin: 0;
+            float: right;
+        }
+    }
+    
+    &-textcontent {
+        padding-top: 10px;
+        color: $white;
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+        }
+
+        span {
+            text-align: center;
+            padding: 3px 0;
+            display: block;
+
+            @media (min-width: 768px) {
+                text-align: start;
+            }  
+        }
+
+        .span-email a {
+            color: $white;
+        }
+    }
 }

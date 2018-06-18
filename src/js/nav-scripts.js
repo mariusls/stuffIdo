@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    if ($(window).width() > 1199) {
+    if ($(window).width() > 991) {
         $('#nav-search-button').click(function(e) {
             if ($('#search-input-container').hasClass('hdn')) {
                 e.preventDefault();
@@ -12,15 +12,18 @@ $(document).ready(function() {
         $('')
 
         // Close search bar if mouseclick outside of it
-        /*if (!$('#search-input-container').hasClass('hidden')) {
+
+        if (!$('#search-input-container').hasClass('hdn')) {
             $(document).mouseup(function (e) {
                 var container = $('#navSearchInput');
-
+                //console.log("hei");
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    $('#search-input-container').addClass('hidden');
+                    console.log("hei");
+                    $('#search-input-container').addClass('hdn');
                 }
             });
-        }*/
+        }
+        
 
         $('#nav-search-close-button').click(function(e) {
             e.preventDefault();

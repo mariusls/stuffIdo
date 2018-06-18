@@ -19,13 +19,34 @@ h3 {
     margin-right: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     color: $dark-blue;
+
+    @media (min-width: 768px) {
+        font-size: 36px;
+    }
     
     @media (min-width: 992px) {
         font-size: 40px;
+    }  
+}
+
+.h3-standard {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: none;
+    text-decoration: none;
+
+    @media (min-width: 768px) {
+        font-size: 36px;
     }
-    
+
+    @media (min-width: 992px) {
+        font-size: 40px;
+    }  
 }
 
 p, div {

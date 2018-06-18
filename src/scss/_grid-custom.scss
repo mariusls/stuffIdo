@@ -28,7 +28,6 @@
     margin-right: auto;
     margin-left: auto;
 
-
     @media (min-width: 768px) {
         width: 750px;
     }
@@ -59,7 +58,6 @@
     }
 }
 
-
 .col-5 {
     @media (min-width: 1200px) {
         width: 20% !important;
@@ -69,9 +67,14 @@
 }
 
 .col-centered {
+    overflow: hidden;
     float: none;
     margin-left: auto;
     margin-right: auto;
+
+    &-smallwidth {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1200px) {
