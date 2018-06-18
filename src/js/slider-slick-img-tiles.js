@@ -23,8 +23,7 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    arrows: false,
-                    dots: true
+                    arrows: false
                 }
             },
 
@@ -33,8 +32,7 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
-                    dots: true
+                    arrows: false
                 }
             }
         ]
