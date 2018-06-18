@@ -1,0 +1,90 @@
+footer {
+    min-height: 260px;
+    padding: 45px 0;
+    background-color: $dark-blue;
+    color: $white;
+
+    .footer-top {
+        overflow: hidden;
+        padding-bottom: 45px;
+
+        &-item {
+
+            padding-bottom: 20px;
+
+            @media (min-width: 992px) {
+                width: 19% !important;
+            }
+
+            a {
+
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-height: 40px;
+                }
+            }  
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 45px;
+        border-top: 1px solid $white;
+        overflow: hidden;
+
+        a {
+            color: $white;
+            text-decoration: underline;
+        }
+
+
+        &-left {
+            text-align: center;
+            padding-bottom: 30px;
+
+            @media (min-width: 768px) {
+                text-align: start;
+                padding-top: 8px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+    
+            span:not(:last-child) {
+                padding-right: 30px;
+            }
+        }
+
+        &-center {
+
+            img {
+                height: auto;
+                width: 120px;
+            }
+
+        }
+
+        &-right {
+            text-align: center;
+            padding-top: 30px;
+
+            @media (min-width: 768px) {
+                text-align:end;
+                padding-top: 8px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+
+                &:hover {
+                    color: $itumx-brand;
+                }
+            }
+            a:not(:first-child) {
+                padding-left: 20px;
+            }     
+        }
+    }
+}
