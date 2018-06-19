@@ -1,4 +1,5 @@
 footer {
+    position: relative;
     min-height: 260px;
     padding: 45px 0;
     background-color: $dark-blue;
@@ -6,7 +7,7 @@ footer {
 
     .footer-top {
         overflow: hidden;
-        padding-bottom: 45px;
+        padding-bottom: 30px;
 
         &-item {
 
@@ -29,7 +30,7 @@ footer {
     }
 
     .footer-bottom {
-        padding-top: 45px;
+        padding-top: 30px;
         border-top: 1px solid $white;
         overflow: hidden;
 
@@ -85,6 +86,28 @@ footer {
             a:not(:first-child) {
                 padding-left: 20px;
             }     
+        }
+    }
+
+    .to-top-holder {
+        position: absolute;
+        z-index: 999;
+        right: 100px;
+        top: -85px;
+        cursor: pointer;
+        
+        .glyphicon {
+            display: block;
+            font-size: 35px;
+            padding-left: 0;
+        }
+
+        .to-top-text {
+            font-size: 18px;
+            display: table-caption;
+            line-height: 1.1;
+            padding-top: 5px;
+            //word-wrap: break-word;
         }
     }
 }
