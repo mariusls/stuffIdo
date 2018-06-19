@@ -90,11 +90,19 @@ footer {
     }
 
     .to-top-holder {
+
         position: absolute;
         z-index: 999;
-        right: 100px;
-        top: -85px;
         cursor: pointer;
+        color: black;
+        right: 20px;
+        top: 10px;
+
+        @media (min-width: 992px) {
+            right: 100px;
+            top: -85px;
+        }
+
         
         .glyphicon {
             display: block;
@@ -103,11 +111,10 @@ footer {
         }
 
         .to-top-text {
-            font-size: 18px;
-            display: table-caption;
+            font-size: 16px;
+            display: table-caption; // Make line break after word
             line-height: 1.1;
             padding-top: 5px;
-            //word-wrap: break-word;
         }
     }
 }

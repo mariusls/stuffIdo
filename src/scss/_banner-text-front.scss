@@ -2,7 +2,9 @@
 
 .banner-text-front {
 	position: relative;
+	//overflow: hidden;
 }
+
 .image-responsive img {
     display: block;
 	height: auto;
@@ -32,7 +34,7 @@
 	
 	@media (min-width: 768px) {
 		width: 75%;
-		position: absolute;
+		//position: absolute;
     }
     
     @media (min-width: 992px) {
@@ -76,6 +78,7 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		padding-bottom: 30px;
 		width: 90%;
 		
 		@media (min-width: 1200px) {
@@ -85,7 +88,7 @@
 }
 
 .btn-banner {
-	margin-top: 45px;
+	margin-top: 15px;
 	//display: block;
 	margin-left: auto;
 	margin-right: auto;

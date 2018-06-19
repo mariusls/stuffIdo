@@ -1,0 +1,26 @@
+.profile-short-wrap {
+    overflow: hidden;
+    padding: 15px 0 30px 0;
+}
+.img-profile-item {
+    overflow: hidden;
+    padding-top: 30px;
+
+    .img-profile-item-text {
+        padding-top: 15px;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+
+        &-header {
+            font-weight: bold;
+        }
+
+        &-desc {
+
+        }
+    }
+}
+    

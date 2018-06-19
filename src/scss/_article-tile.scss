@@ -34,5 +34,6 @@
 
     article {
         @include prefix(transition, ease all 0.2s, webkit);
+        background: transparent;
     }  
 }
