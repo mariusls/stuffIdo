@@ -1,5 +1,5 @@
 article {
-    background: $white;
+    //background: $white;
 
     header {
 
@@ -17,7 +17,8 @@ article {
                 span {
                     display: inline-block;
                 }
-                    span:not(:last-child):after {
+
+                span:not(:last-child):after {
                     padding-left: 20px;
                     padding-right: 20px;
                     content: "|";
@@ -28,21 +29,12 @@ article {
         h1 {
             margin-left: auto;
             margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
             text-align: center;
             font-weight: bold;
-            font-size: 64px;
             color: $dark-blue;
 
-            @media (min-width: 768px) {
-                font-size: 36px;
-            }
-            
-            @media (min-width: 992px) {
-                font-size: 40px;
-            }
-            @media (min-width: 992px) {
-                width: 75%;
-            }
         }
 
         .article-abstract {
@@ -52,6 +44,7 @@ article {
             margin-right: auto;
             padding-bottom: 30px;
             width: 90%;
+            font-size: 24px;
             
             @media (min-width: 1200px) {
                 width: 60%;
@@ -60,22 +53,23 @@ article {
     }
 }
 
-.article-page {
-    position: relative;
 
-    .article-front {
-        position: relative;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        top: 225px;
-        background: white;
+.article-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 225px;
+    background: white;
 
-        header {
+    header {
 
-            h1 {
-                padding-top: 45px;
-            }
+        h1 {
+            padding-top: 45px;
         }
     }
+
+    .article-maincontent {
+
+    }
+
+
 }
