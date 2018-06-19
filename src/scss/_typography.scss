@@ -8,7 +8,7 @@ h2 {
     margin-top: 30px;
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     text-transform: uppercase;
@@ -19,15 +19,15 @@ h3 {
     margin-right: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 34px;
     color: $dark-blue;
 
     @media (min-width: 768px) {
-        font-size: 36px;
+        font-size: 42px;
     }
     
     @media (min-width: 992px) {
-        font-size: 40px;
+        font-size: 48px;
     }  
 }
 
@@ -45,12 +45,12 @@ h3 {
     }
 
     @media (min-width: 992px) {
-        font-size: 40px;
+        font-size: 48px;
     }  
 }
 
 p, div {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .color-white {
