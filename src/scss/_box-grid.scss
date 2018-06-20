@@ -1,5 +1,21 @@
+
+@media (min-width: 992px) {
+    [class*="col-"].double-box:first-child{
+        //padding-right: 75px;
+        max-width: 40%;
+        float: left;
+    }
+
+    [class*="col-"].double-box:last-child{
+        //padding-left: 75px;
+        max-width: 40%;
+        float: right;
+    }
+}
+
+
 .box-grid {
-    padding: 45px 0;
+    padding: 30px 0;
     margin: 15px 0;
 
     &-item {
@@ -7,10 +23,13 @@
         background: $white;
         text-align: center;
         border: 2px solid transparent;
-        margin: 15px 0;
+        margin: 30px 0;
+
+
 
         @media (min-width: 768px) {
             min-height: 520px;
+            margin: 15px 0;
         }
 
         @include prefix(transition, ease all 0.35s, webkit);
@@ -21,7 +40,7 @@
                 color: $white;
             }
 
-            .readmore {
+            .readmore a {
                 color: $dark-blue;
             }
             border: 2px solid $itumx-brand;
@@ -35,13 +54,12 @@
         }
 
         &-textcontent {
-            padding-top: 10px;
+            padding: 10px 0 15px 0;
             margin: 0 auto 15px auto;
             width: 75%;
 
             h3 {
                 font-size: 22px;
-                line-height: 1.45;
             }
 
             &-maintext {
@@ -49,7 +67,7 @@
             }
         }
 
-        .readmore {
+        .readmore a {
             position: absolute;
             text-align: center;
             width: 100%;
@@ -57,6 +75,23 @@
             bottom: 0;
             //display: inline-block;
             margin-bottom: 15px;
+        }
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+}
+
+.double-box {
+    .box-grid-item {
+        @media (min-width: 1200px) {
+            min-height: 500px;
+        }
+
+        &-image img {
+            height: 230px; // TODO: remove and use image-responsive with proper imagesize
+            width: 100%;
         }
     }
 }

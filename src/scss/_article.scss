@@ -29,47 +29,122 @@ article {
         h1 {
             margin-left: auto;
             margin-right: auto;
-            padding-left: 15px;
-            padding-right: 15px;
             text-align: center;
             font-weight: bold;
             color: $dark-blue;
+
+            @media (min-width: 768px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
 
         }
 
         .article-abstract {
             margin-top: 30px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
             padding-bottom: 30px;
-            width: 90%;
             font-size: 24px;
-            
-            @media (min-width: 1200px) {
-                width: 60%;
-            }
         }
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 30px;
+        color: $blue;
+        text-decoration: none;
+        text-align: start;
+
     }
 }
 
 
-.article-content {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 225px;
-    background: white;
+.page-layout-small {
+	background-color: $white;
+    padding: 0 15px 30px 15px;
 
+    @media (min-width: 768px) {
+        padding: 0 45px 30px 45px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 75px 30px 75px;
+    }
+}
+
+.article-main {
     header {
+        width: 95%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px) {
+            width: 90%;
+        }
 
         h1 {
             padding-top: 45px;
         }
+
+        .article-abstract {
+            padding-bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (min-width: 768px) {
+                width: 85%;
+            }          
+        }
     }
 
-    .article-maincontent {
+    .article-textsection {
+        margin-top: 30px;
+        margin-bottom: 15px;
 
+        &-text {
+            font-size: 20px;
+            margin-top: 15px;
+
+            @media (min-width: 992px) {
+                margin-top: 0;
+            }
+        }
     }
 
+    .page-layout-fullwidth {
+        margin-top: 15px;
+        margin-bottom: 30px;
 
+        .article-imageleft-textright {
+
+            padding: 45px 15px 45px 0;
+
+            @media (min-width: 768px) {
+                padding: 45px 45px 45px 0;
+            }
+
+            @media (min-width: 1200px) {
+                padding: 45px 75px 45px 0;
+            }
+
+            img {
+                display: block;
+                height: 270px; // TODO: auto when proper image size
+                width: 100%;
+                margin-bottom: 20px;
+
+                @media (min-width: 992px) {
+                    margin-bottom: 0;
+                }
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            &-text {
+                font-size: 20px;
+            }
+        }
+    }
 }

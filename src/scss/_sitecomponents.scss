@@ -47,9 +47,12 @@
         }
     }
 
+    &-white, &-white a {
+        color: $white;
+    }
+    
     &-white {
         border: 2px solid $white;
-        color: $white;
 
         &:hover {
             background: transparent;
@@ -101,7 +104,7 @@
     padding-left: 5px;
 }
 
-.readmore, .readmore:hover {
+.readmore a, .readmore a:hover {
     font-weight: bold;
     color: $itumx-brand;
 }
@@ -154,13 +157,16 @@
     height: 155px;
 }
 
+.top-margin {
+    padding-top: 225px;
+}
+
 .bck-image-fullwidth {
-    position: absolute;
-	max-height: 550px;
-	height: 550px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: 100%;
+    position: relative;
+    height: auto;
+    background-repeat: no-repeat;
+    // 500px should be auto instead, use proper image-size
+	background-size: 100% 500px;
 }
 
 
@@ -199,10 +205,4 @@
             color: $white;
         }
     }
-}
-
-section:after {
-    content: "";
-    display: table;
-    clear: both;
 }

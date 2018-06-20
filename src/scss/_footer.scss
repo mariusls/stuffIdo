@@ -2,8 +2,6 @@ footer {
     position: relative;
     min-height: 260px;
     padding: 45px 0;
-    background-color: $dark-blue;
-    color: $white;
 
     .footer-top {
         overflow: hidden;
@@ -14,7 +12,7 @@ footer {
             padding-bottom: 20px;
 
             @media (min-width: 992px) {
-                width: 19% !important;
+                width: 20% !important;
             }
 
             a {
@@ -94,7 +92,6 @@ footer {
         position: absolute;
         z-index: 999;
         cursor: pointer;
-        color: black;
         right: 20px;
         top: 10px;
 
@@ -108,6 +105,7 @@ footer {
             display: block;
             font-size: 35px;
             padding-left: 0;
+            color: $black;
         }
 
         .to-top-text {
@@ -115,6 +113,7 @@ footer {
             display: table-caption; // Make line break after word
             line-height: 1.1;
             padding-top: 5px;
+            color: $black
         }
     }
 }
