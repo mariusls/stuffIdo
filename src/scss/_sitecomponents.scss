@@ -76,7 +76,7 @@
 }
 
 .page-content {
-    margin: 30px 0;
+    padding: 50px 0 100px 0;
 }
 
 // Various hover classes
@@ -163,10 +163,14 @@
 
 .bck-image-fullwidth {
     position: relative;
-    height: auto;
+    //height: auto;
     background-repeat: no-repeat;
     // 500px should be auto instead, use proper image-size
 	background-size: 100% 500px;
+}
+
+.bck-image-fullwidth.cover-header {
+    top: -90px;
 }
 
 

@@ -98,7 +98,7 @@ article {
     }
 
     .article-textsection {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 15px;
 
         &-text {
@@ -117,7 +117,7 @@ article {
 
         .article-imageleft-textright {
 
-            padding: 45px 15px 45px 0;
+            padding: 45px 0 45px 0;
 
             @media (min-width: 768px) {
                 padding: 45px 45px 45px 0;
@@ -129,7 +129,7 @@ article {
 
             img {
                 display: block;
-                height: 270px; // TODO: auto when proper image size
+                //height: 270px; // TODO: auto when proper image size
                 width: 100%;
                 margin-bottom: 20px;
 

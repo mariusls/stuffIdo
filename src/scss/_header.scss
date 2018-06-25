@@ -6,6 +6,7 @@
     position: relative;
     min-height: 65px;
     margin-bottom: 20px;
+    z-index: 999;
 }
 
 .main-logo img {
@@ -147,6 +148,7 @@
             margin-top: 0;
             padding-top: 20px;
             color: #333333;
+            background: transparent;
 
             ul {
                 display: inline-block;
@@ -207,6 +209,7 @@
 
             .button-nav-search {
                 padding-right: 12px;
+                padding-left: 15px;
                 z-index: 999;
                 top: 0;
                 right: 0;

@@ -7,16 +7,22 @@
     }
 
     [class*="col-"].double-box:last-child{
-        //padding-left: 75px;
         max-width: 40%;
         float: right;
     }
 }
 
-
 .box-grid {
-    padding: 30px 0;
+    padding-bottom: 70px;
     margin: 15px 0;
+
+    @media (min-width: 992px) {
+        padding-bottom: 100px;
+    }
+
+    &-wrap {
+        margin-top: 100px;
+    }
 
     &-item {
         position: relative;
@@ -25,11 +31,9 @@
         border: 2px solid transparent;
         margin: 30px 0;
 
-
-
         @media (min-width: 768px) {
-            min-height: 520px;
-            margin: 15px 0;
+            min-height: 530px;
+            margin-top: 0px;
         }
 
         @include prefix(transition, ease all 0.35s, webkit);
@@ -55,11 +59,12 @@
 
         &-textcontent {
             padding: 10px 0 15px 0;
-            margin: 0 auto 15px auto;
+            margin: 25px auto 15px auto;
             width: 75%;
 
             h3 {
                 font-size: 22px;
+                margin-bottom: 15px;
             }
 
             &-maintext {
@@ -79,12 +84,18 @@
     }
 
     .button {
-        margin-top: 30px;
+        margin-top: 60px;
+
+        @media (min-width: 992px) {
+            margin-top: 85px;
+        }
     }
 }
 
 .double-box {
     .box-grid-item {
+        margin-top: 55px;
+
         @media (min-width: 1200px) {
             min-height: 500px;
         }

@@ -25,7 +25,11 @@
 
 
 // Slick sliders
-@import '_slick-slider-general';
+@import 'slick-carousel1.8.1/slick-theme.scss';
+@import 'slick-carousel1.8.1/slick.scss';
+
+
+@import '_slick-slider-general.scss';
 @import '_slider-tiles.scss';
 
 @import '_typography.scss';

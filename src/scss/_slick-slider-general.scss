@@ -1,47 +1,5 @@
 .slider-general {
     margin: 30px 0;
-
-
-    // DOTS WIP
-    /*.slick-dots {
-        position: absolute;
-        bottom: -25px;
-        display: block;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        text-align: center;
-
-        .slick-active {
-            position: relative;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 0 5px;
-            padding: 0;
-            cursor: pointer;
-
-            button {
-                font-size: 0;
-                line-height: 0;
-                display: block;
-                width: 20px;
-                height: 20px;
-                padding: 5px;
-                cursor: pointer;
-                color: transparent;
-                border: 0;
-                outline: none;
-                background: transparent;
-
-                &:before {
-                    font-family: 'slick';
-                    font-size: 6px;
-                }
-            }
-        }
-    }*/
     
     .glyphicon.slick-arrow {
         @include prefix(transform, rotate(90deg), webkit ms o moz);
@@ -64,5 +22,9 @@
 
     .slider-arrow-next {
         right: -25px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 35px;
     }
 }

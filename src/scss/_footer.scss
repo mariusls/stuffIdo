@@ -1,11 +1,11 @@
 footer {
     position: relative;
     min-height: 260px;
-    padding: 45px 0;
+    padding: 60px 0 50px 0;
 
     .footer-top {
         overflow: hidden;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
 
         &-item {
 
@@ -28,7 +28,7 @@ footer {
     }
 
     .footer-bottom {
-        padding-top: 30px;
+        padding-top: 60px;
         border-top: 1px solid $white;
         overflow: hidden;
 
