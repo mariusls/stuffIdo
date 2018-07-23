@@ -349,7 +349,11 @@ footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-height: 40px; }
+        max-height: 40px;
+        -webkit-transition: ease all 0.2s;
+        transition: ease all 0.2s; }
+        footer .footer-top-item a img:hover {
+          transform: scale(1.1); }
   footer .footer-bottom {
     padding-top: 60px;
     border-top: 1px solid #FFFFFF;
@@ -378,11 +382,14 @@ footer {
         footer .footer-bottom-right {
           text-align: end;
           padding-top: 8px; } }
-      footer .footer-bottom-right a {
+      footer .footer-bottom-right a, footer .footer-bottom-right a span {
         text-decoration: none;
         font-size: 20px; }
-        footer .footer-bottom-right a:hover {
-          color: #EF532F; }
+        footer .footer-bottom-right a:hover, footer .footer-bottom-right a span:hover {
+          color: #EF532F;
+          -webkit-transition: ease all 0.1s;
+          transition: ease all 0.1s;
+          transform: scale(1.2); }
       footer .footer-bottom-right a:not(:first-child) {
         padding-left: 20px; }
   footer .to-top-holder {
