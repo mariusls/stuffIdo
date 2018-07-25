@@ -217,3 +217,33 @@
         }
     }
 }
+
+
+.header-main.background-style {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    @media (min-width: 992px) {
+        #mainNavigation {
+            ul li a, span {
+                color: $white;
+            }
+
+            a:hover, a.active {
+                border-bottom: 1px solid $white;
+            }
+
+            .search-form-container {
+                background-color: $itumx-brand;
+
+                .nav-search-close-button {
+                    border-left: 1px solid $white;
+                }
+            }
+
+        }
+    }
+    
+
+}

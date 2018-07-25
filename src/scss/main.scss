@@ -12,6 +12,7 @@
 
 
 // Components
+@import '_banner-header.scss';
 @import '_article.scss';
 @import '_grid-custom.scss';
 @import '_hamburger.scss';
@@ -22,11 +23,6 @@
 @import '_box-grid.scss';
 @import '_article-tile.scss';
 @import '_image-profile-grid.scss';
-
-
-// Slick sliders
-@import 'slick-carousel1.8.1/slick-theme.scss';
-@import 'slick-carousel1.8.1/slick.scss';
 
 
 @import '_slick-slider-general.scss';
