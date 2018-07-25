@@ -1,8 +1,8 @@
 .banner-header-background {
     display: block;
-    //background-repeat: no-repeat;
+    background-repeat: no-repeat;
     height: 750px;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: relative;
 
     .banner-textwrap {
@@ -32,6 +32,23 @@
                 padding: 0 175px;
             }
 
+        }
+
+        .scroll-down-holder {
+            display: none;
+
+            @media (min-width: 992px) {
+                position: absolute;
+                left: 28%;
+                .glyphicon {
+                    font-size: 40px;
+                    font-weight: normal;
+                    cursor: pointer;
+                    padding-top: 150px;
+                }
+            }
+            
+            
         }
 
 

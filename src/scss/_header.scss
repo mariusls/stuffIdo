@@ -220,9 +220,15 @@
 
 
 .header-main.background-style {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 999;
+
+
+    .hambuger-inner, .hambuger-inner::after, .hambuger-inner::before {
+        background-color: $white;
+    }
+
 
     @media (min-width: 992px) {
         #mainNavigation {
