@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    if(window.location.href.indexOf("articlepage") > -1) {
-        console.log("Dette er artikkelsiden");
+    
+    // Check to see if on indexpage, if so, add class to change headerstyle
+    if(window.location.pathname == "/") {
         $('.header-main').addClass('background-style');
+        $('.main-logo img').attr("src", "/images/itumxlogo4.PNG")
     }
 });

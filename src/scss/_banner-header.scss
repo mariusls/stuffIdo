@@ -1,9 +1,25 @@
 .banner-header-background {
-    display: block;
     background-repeat: no-repeat;
+    background-position: center;
     height: 750px;
-    background-size: 100% 100%;
+    background-size: cover;
     position: relative;
+
+    @media (min-width: 991px) {
+        height: 1100px;
+    }
+
+    @media (min-width: 1200px) {
+        background-position: center 70%;
+    }
+
+    @media (min-width: 1600px) {
+        background-position: center 53%;
+    }
+
+    @media (min-width: 2000px) {
+        background-position: center 40%;
+    }
 
     .banner-textwrap {
         display: block;
@@ -19,19 +35,37 @@
         h1 {
             font-weight: bold;
             margin-bottom: 50px;
-            line-height: 1.2;
+            line-height: 1.22;
+            letter-spacing: 2px;
+
+            @media (min-width: 768px) {
+                font-size: 50px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 60px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 74px;
+            }
         }
         span {
             display: block;
+            font-size: 20px;
 
             @media (min-width: 768px) {
                 padding: 0 125px;
+                font-size: 22px;
             }
 
-            @media (min-width: 991px) {
+            @media (min-width: 992px) {
                 padding: 0 175px;
             }
 
+            @media (min-width: 1200px) {
+                font-size: 24px;
+            }
         }
 
         .scroll-down-holder {
@@ -44,15 +78,9 @@
                     font-size: 40px;
                     font-weight: normal;
                     cursor: pointer;
-                    padding-top: 150px;
+                    padding-top: 200px;
                 }
-            }
-            
-            
-        }
-
-
-        
+            }    
+        }   
     }
-
 }

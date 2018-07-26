@@ -78,17 +78,13 @@
                 a {
                     @include prefix(transition, ease all 0.35s, webkit);
                     display: block;
-                    color: #333333;
+                    color: $dark-blue;
                     padding: 3px 10px;
                     border-bottom: 1px solid transparent;
 
-                    &:hover {
+                    &:hover, &:focus {
                         background: none ;
                         border-bottom: 1px solid $itumx-brand;
-                        text-decoration: none;
-                    }
-                    &:focus {
-                        background: none;
                         text-decoration: none;
                     }
 
@@ -153,14 +149,16 @@
             ul {
                 display: inline-block;
                 padding-top: 5px;
-
-                /*:last-child a {
-                    padding-right: 0;
-                }*/
             
                 li {
                     float: left;
                 }
+            }
+        }
+
+        #navigation-list.search-open {
+            ul {
+                opacity: 0.4
             }
         }
 
@@ -175,7 +173,7 @@
                 z-index: 99;
                 right: 0;
                 top: 0;
-                padding-left: 50px;
+                //padding-left: 50px;
                 width: 480px;
 
                 @media (min-width: 992px) {
@@ -236,7 +234,7 @@
                 color: $white;
             }
 
-            a:hover, a.active {
+            a:not(.nav-brand):hover, a.active {
                 border-bottom: 1px solid $white;
             }
 
@@ -250,6 +248,4 @@
 
         }
     }
-    
-
 }

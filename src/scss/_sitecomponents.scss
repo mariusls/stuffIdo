@@ -26,7 +26,7 @@
 	
 	&:active, &:focus {
         color: $white;
-        outline: none;
+        
 	}
 }
 
@@ -77,6 +77,22 @@
     display: inline-block;
     border: none;
     background: none;
+}
+
+.image-responsive img {
+    display: block;
+	height: auto;
+	width: 100%;
+}
+
+.bck-image img {
+	@media (min-width: 992px) {
+		height: 450px !important;
+	}
+}
+
+.border-grey {
+    border: 1px solid #d3d3d3;
 }
 
 .page-content {

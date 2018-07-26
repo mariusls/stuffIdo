@@ -6,6 +6,7 @@ $(document).ready(function() {
                 e.preventDefault();
 
                 $('#search-input-container').removeClass('hdn');
+                $('#navigation-list').addClass('search-open');
             }
         });
 
@@ -22,12 +23,14 @@ $(document).ready(function() {
                     $('#search-input-container').addClass('hdn');
                 }
             });
+
         }
         
 
         $('#nav-search-close-button').click(function(e) {
             e.preventDefault();
             $('#search-input-container').addClass('hdn');
+            $('#navigation-list').removeClass('search-open');
         });
     }
 });
