@@ -12,25 +12,26 @@ $(document).ready(function() {
 
         $('')
 
-        // Close search bar if mouseclick outside of it
+        // Close search bar if mouseclick outside of it (currently also applies for clicks on the close search button)
 
-        if (!$('#search-input-container').hasClass('hdn')) {
-            $(document).mouseup(function (e) {
+        $(document).mouseup(function(e) {
+            if (!$('#search-input-container').hasClass('hdn')) {
                 var container = $('#navSearchInput');
-                //console.log("hei");
-                if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    console.log("hei");
+                //var closeBtn = $('#nav-search-close-button');
+                if (!container.is(e.target)) {
+                    //console.log("test");
                     $('#search-input-container').addClass('hdn');
+                    $('#navigation-list').removeClass('search-open');
                 }
-            });
-
-        }
-        
-
-        $('#nav-search-close-button').click(function(e) {
-            e.preventDefault();
-            $('#search-input-container').addClass('hdn');
-            $('#navigation-list').removeClass('search-open');
+            }
         });
-    }
+        
+        // Currently not in use, method above not perfected
+
+        // $('#nav-search-close-button').click(function(e) {
+        //     //e.preventDefault();
+        //     $('#search-input-container').addClass('hdn');
+        //     $('#navigation-list').removeClass('search-open');
+        // });
+    }    
 });

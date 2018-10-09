@@ -58,6 +58,7 @@ function endOnError(err) {
         }
         
         process.exit(1);
+        
         this.emit('end');
     }
 }
@@ -115,7 +116,7 @@ gulp.task('live-dev', ['clean-dist', 'build-dist', 'browserSync'], function() {
 gulp.task('html-dist-handlebars', function() {
 
     var options = {
-        maxRecursion: 20
+        maxRecursion: 30
     };
 
     return gulp.src(configFrontend.src + '/markup/*.html')
